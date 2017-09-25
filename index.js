@@ -1876,7 +1876,7 @@ forge.pki.rsa.createKeyPairGenerationState = function(bits, e) {
   if(typeof(bits) === 'string') {
     bits = parseInt(bits, 10);
   }
-  bits = bits || 1024;
+  bits = bits || 2048;
 
   // create prng with api that matches BigInteger secure random
   var rng = {
@@ -4184,10 +4184,10 @@ pki.rsa.generateKeyPair = function(bits, e, options, callback) {
     }
   }
   options = options || {};
-  if(bits === undefined) {
-    bits = options.bits || 1024;
+  if(!bits) {
+    bits = options.bits || 2048;
   }
-  if(e === undefined) {
+  if(!e) {
     e = options.e || 0x10001;
   }
   var state = pki.rsa.createKeyPairGenerationState(bits, e);
