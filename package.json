@@ -1,12 +1,12 @@
 {
-  "name": "jh-keypair",
+  "name": "axosoft-keypair",
   "description": "Generate a RSA PEM key pair from pure JS",
   "version": "1.1.1",
   "repository": {
     "type": "git",
-    "url": "git://github.com/johnhaley81/keypair.git"
+    "url": "git://github.com/Axosoft/keypair.git"
   },
-  "homepage": "https://github.com/johnhaley81/keypair",
+  "homepage": "https://github.com/Axosoft/keypair",
   "main": "index.js",
   "scripts": {
     "test": "tape test.js"
@@ -26,9 +26,8 @@
     "ssh"
   ],
   "author": {
-    "name": "Julian Gruber",
-    "email": "mail@juliangruber.com",
-    "url": "http://juliangruber.com"
+    "name": "Axosoft, LLC",
+    "url": "http://axosoft.com"
   },
   "testling": {
     "files": "test.js",
